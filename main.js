@@ -1,5 +1,5 @@
-let boton = document.getElementById('boton');
-let preventDefault = (e) => {
+let boton = document.getElementById('form1');
+let validarDatos = (e) => {
 
     let input = document.querySelectorAll(".form-control");
     let alertMessage = document.querySelector("#alert-message");
@@ -15,4 +15,4 @@ let preventDefault = (e) => {
         }
     });
 };
-boton.addEventListener("click", preventDefault)
+boton.addEventListener("submit", validarDatos)
